@@ -194,13 +194,13 @@
 
 	<div id="Graduated" class="tabcontent">
 		<h2>'Graduated map'</h2>
-		<img src="graduated.sem.animation.gif" width="800" alt="Mortalidade em borregos/cabritos - graduated map" class="center">
+		<img src="borregos_cabritos.graduated.Sem.gif" width="800" alt="Mortalidade em borregos/cabritos - graduated map" class="center">
 		<br />
 	</div>
 	  
 	<div id="Heatmap" class="tabcontent">
 		<h2>'Heatmap'</h2>
-		<img src="heatmap.sem.animation.gif" width="800" alt="Mortalidade em borregos/cabritos - heatmap" class="center">
+		<img src="borregos_cabritos.heatmap.Sem.gif" width="800" alt="Mortalidade em borregos/cabritos - heatmap" class="center">
 	
 		<br />
 	</div>
@@ -264,7 +264,7 @@
 				// a must be equal to b
 				return 0;
 				});
-			seriesFemeas = concelhoData.map(x => ({ Semana: x.sem, 'FÃªmea(s) Reprodutora(s)*': parseInt(x.femreprod)})).sort(function (a, b) {
+			seriesFemeas = concelhoData.map(x => ({ Semana: x.sem, 'Fêmea(s) Reprodutora(s)*': parseInt(x.femreprod)})).sort(function (a, b) {
 				if (parseInt(a.Semana.substring(0,a.Semana.indexOf("/"))) > parseInt(b.Semana.substring(0,b.Semana.indexOf("/")))) {
 					return 1;
 				}
@@ -296,7 +296,7 @@
 			},
 			
 			title: {
-				text: 'EvoluÃ§Ã£o semanal da mortalidade em borregos/cabritos do concelho de ' + concelhosElem.options[concelhosElem.selectedIndex].text
+				text: 'Evolução semanal da mortalidade em borregos/cabritos do concelho de ' + concelhosElem.options[concelhosElem.selectedIndex].text
 			},
 			
 			tooltip: {
@@ -413,7 +413,7 @@
 			divShowData.innerHTML = "";
 			divShowData.appendChild(table);
 			
-			document.getElementById('msg').innerHTML = '<sub>*FÃªmeas com mais de 12 meses no concelho de ' + concelhosElem.options[concelhosElem.selectedIndex].text + '.</sub>';
+			document.getElementById('msg').innerHTML = '<sub>*Fêmeas com mais de 12 meses no concelho de ' + concelhosElem.options[concelhosElem.selectedIndex].text + '.</sub>';
 		}
 		
 	</script>
