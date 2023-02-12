@@ -272,18 +272,12 @@
 				return 0;
 				});
 			seriesFemeas = concelhoData.map(x => ({ Mês: x.mes, 'Fêmea(s) Reprodutora(s)*': parseInt(x.femreprod)})).sort(function (a, b) {
-				if (parseInt(a.Mês.substring(0,a.Mês.indexOf("/"))) > parseInt(b.Mês.substring(0,b.Mês.indexOf("/")))) {
+				if (a.Mês > b.Mês) {
 					return 1;
 				}
-				if (parseInt(a.Mês.substring(0,a.Mês.indexOf("/"))) < parseInt(b.Mês.substring(0,b.Mês.indexOf("/")))) {
+				if (a.Mês < b.Mês) {
 					return -1;
 				}
-				// if (a.Mês > b.Mês) {
-				// 	return 1;
-				// }
-				// if (a.Mês < b.Mês) {
-				// 	return -1;
-				// }
 				// a must be equal to b
 				return 0;
 				});
