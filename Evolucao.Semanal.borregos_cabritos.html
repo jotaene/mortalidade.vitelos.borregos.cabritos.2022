@@ -258,11 +258,13 @@
 							label: "Fêmea(s) Reprodutora(s)*",
 							yAxisID: 'A',
 							backgroundColor: "#3e95cd",
+							barPercentage: 0.4,
 							data: seriesFemeas
 						}, {
 							label: "Mortes",
 							yAxisID: 'B',
 							backgroundColor: "#8e5ea2",
+							barPercentage: 0.6,
 							data: seriesMortes
 						}
 					]
@@ -273,9 +275,6 @@
 						text: 'Evolução da mortalidade'
 					},
 					scales: {
-						xAxes: [{
-							barPercentage: 0.4
-						}],
 						yAxes: [{
 							id: 'A',
 							type: 'linear',
